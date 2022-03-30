@@ -41,7 +41,7 @@ instance_groups:
               password: ((blobstore_agent_password))
               tls:
                 cert:
-                  ca: ((blobstore_ca.certificate))
+                  ca: ((blobstore_server_tls.ca))
               user: agent
             provider: dav
           ntp:
